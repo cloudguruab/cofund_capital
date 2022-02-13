@@ -38,24 +38,49 @@ const navigationFooter = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-6 md:order-2">
-          {navigationFooter.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-white hover:text-gray-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
-        <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base text-white">
-            &copy; 2020 The Source Projcet @useSource, LLC. All rights reserved.
+    <footer class="text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+      <div class="max-w-screen-xl px-4 pt-32 pb-12 mx-auto sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-4xl font-extrabold sm:text-6xl">
+            Customise Your Product
           </p>
+
+          <a
+            class="inline-block px-12 py-3 mt-8 text-sm font-medium border rounded-full border-white/25 hover:bg-white hover:text-red-500"
+            href=""
+          >
+            Get Started
+          </a>
+        </div>
+
+        <div class="pt-12 mt-32 border-t border-white/25 sm:items-center sm:justify-between sm:flex">
+          <nav class="flex justify-center space-x-4 text-sm font-medium sm:justify-start">
+            <a href="" class="hover:opacity-75">
+              {" "}
+              FAQs{" "}
+            </a>
+            <a href="" class="hover:opacity-75">
+              {" "}
+              Contact{" "}
+            </a>
+            <a href="" class="hover:opacity-75">
+              {" "}
+              Returns Policy{" "}
+            </a>
+          </nav>
+
+          <div class="flex justify-center mt-6 space-x-6 sm:justify-end sm:mt-0">
+            {navigationFooter.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-white hover:text-gray-500"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
