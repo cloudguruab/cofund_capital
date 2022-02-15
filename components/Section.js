@@ -2,13 +2,15 @@
 import ContactForm from "./Contact";
 import styles from "../styles/Home.module.css";
 import Image from 'next/image';
+import photo from "../public/photo.jpeg"
+import home from "../public/home.jpeg"
 
 function PreviewSection() {
   return (
     <section className="relative bg-white">
       <Image
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-        src="https://images.unsplash.com/photo-1601758003122-53c40e686a19"
+        src="./photo.jpeg"
         alt="Couple on a bed with a dog"
       />
 
@@ -52,7 +54,7 @@ function CardSection() {
           <div className="relative h-64 lg:h-auto">
             <Image
               className="absolute inset-0 object-cover w-full lg:h-80 sm:h-full"
-              src="https://www.hyperui.dev/photos/house-1.jpeg"
+              src="./home.jpeg"
               alt="Image of a living room with chairs"
             />
           </div>
