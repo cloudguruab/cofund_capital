@@ -1,7 +1,10 @@
+import styles from "../styles/Home.module.css"
+
+
 const navigationFooter = [
   {
     name: "Instagram",
-    href: "https://www.instagram.com/usesourceio/",
+    href: "https://www.instagram.com/tellcofund/",
     icon: (props) => (
       <svg fill="white" viewBox="0 0 24 24" {...props}>
         <path
@@ -14,7 +17,7 @@ const navigationFooter = [
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/useSource",
+    href: "https://twitter.com/tellcofund",
     icon: (props) => (
       <svg fill="white" viewBox="0 0 24 24" {...props}>
         <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -23,7 +26,7 @@ const navigationFooter = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/useSource",
+    href: "https://github.com/cloudguruab/cofund_capital",
     icon: (props) => (
       <svg fill="white" viewBox="0 0 24 24" {...props}>
         <path
@@ -38,38 +41,15 @@ const navigationFooter = [
 
 export default function Footer() {
   return (
-    <footer class="text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-      <div class="max-w-screen-xl px-4 pt-32 pb-12 mx-auto sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto text-center">
-          <p class="text-4xl font-extrabold sm:text-6xl">
-            Customise Your Product
-          </p>
-
-          <a
-            class="inline-block px-12 py-3 mt-8 text-sm font-medium border rounded-full border-white/25 hover:bg-white hover:text-red-500"
-            href=""
-          >
-            Get Started
-          </a>
-        </div>
-
-        <div class="pt-12 mt-32 border-t border-white/25 sm:items-center sm:justify-between sm:flex">
-          <nav class="flex justify-center space-x-4 text-sm font-medium sm:justify-start">
-            <a href="" class="hover:opacity-75">
-              {" "}
-              FAQs{" "}
-            </a>
-            <a href="" class="hover:opacity-75">
-              {" "}
-              Contact{" "}
-            </a>
-            <a href="" class="hover:opacity-75">
-              {" "}
-              Returns Policy{" "}
-            </a>
+    <footer className={styles.footer}>
+      <div className="max-w-screen-xl px-4 pt-32 pb-12 mx-auto sm:px-6 lg:px-8">
+        
+        <div className="pt-12 mt-32 border-t border-white/25 sm:items-center sm:justify-between sm:flex">
+          <nav className="flex justify-center space-x-4 text-sm font-medium sm:justify-start">
+            <p>Copyright Cofund Capital, DBA Source Homes, SP</p>
           </nav>
 
-          <div class="flex justify-center mt-6 space-x-6 sm:justify-end sm:mt-0">
+          <div className="flex justify-center mt-6 space-x-6 sm:justify-end sm:mt-0">
             {navigationFooter.map((item) => (
               <a
                 key={item.name}
