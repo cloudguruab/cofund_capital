@@ -10,7 +10,7 @@ function PreviewSection() {
     <section className="relative bg-white">
       <Image
         className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-        src="./photo.jpeg"
+        src="/public/photo.jpeg"
         alt="Couple on a bed with a dog"
       />
 
@@ -54,7 +54,7 @@ function CardSection() {
           <div className="relative h-64 lg:h-auto">
             <Image
               className="absolute inset-0 object-cover w-full lg:h-80 sm:h-full"
-              src="./home.jpeg"
+              src="/public/home.jpeg"
               alt="Image of a living room with chairs"
             />
           </div>
