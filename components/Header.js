@@ -7,7 +7,11 @@ export default function Header() {
   return (
     <>
       <head>
-      <title>We buy houses, sell your home fast.</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Companies to buy my home near me. Real estate investment company. Sell my home for cash."/>
+        <meta name="keywords" content="Real Estate Investing, Buy home for cash, Sell my home, Companies that will buy my home"/>
+        <meta name="author" content="Cofund Capital"/>
+        <title>We buy houses, sell your home fast.</title>
       </head>
       <header className={styles.header_style}>
         <div className="px-4 mx-auto sm:pr-0 max-w-screen-2xl">
