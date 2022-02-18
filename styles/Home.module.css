@@ -7,39 +7,37 @@
 #F06449 -> orange soda
 */
 
-.body_scheme {
-  max-width: 32rem;
-  margin-top: 1rem;
-  color: #4B4E6D;
+.cta_color {
+  background-color: #E0E1DD
 }
 
-@media (min-width: 640px) {
-  .body_scheme {
-    max-width: 32rem;
-    margin-top: 1rem;
-    line-height: 1.625;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    color: #4B4E6D;
-    padding-bottom: 8px;
-  }
+.background_color {
+  background-color: #DBD3C9
 }
+
+.body_scheme {
+	font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1.5rem;
+  color: #4B4E6D;
+  margin-top: 1.5rem;
+}
+
 .text_scheme_two {
   color: #4B4E6D;
   font-weight: 800;
-  font-size: 1rem;
-  line-height: 2.25rem; 
-  padding-top: 4px;
-  
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding-top: 8px;
 }
 
 @media (min-width: 640px) {
   .text_scheme_two {
     color: #4B4E6D;
     font-weight: 800;
-    font-size: 1rem;
-    line-height: 1;
-    padding-top: 4px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    padding-top: 6px;
   }
 }
 
@@ -59,21 +57,13 @@
   }
 }
 
-/* still need to config */
-/* block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-green-600 sm:w-auto active:bg-rose-500 hover:bg-rose-700 focus:outline-none focus:ring */
-.get_started_btn {
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-}
-
-
 .footer {
   --tw-gradient-stops: var(--tw-gradient-from), #4B4E6D, var(--tw-gradient-to, #4B4E6D);
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   color: #E0E1DD;
   --tw-gradient-from: #4B4E6D;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, #DBD3C9);
-  --tw-gradient-to: #F06449 ;
+  --tw-gradient-to: #00A676 ;
 }
 
 .header_style {
@@ -93,7 +83,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #E0E1DD;
-  background-color: #F06449;
+  background-color: #00A676;
 }
 
 @media (min-width: 640px) {
@@ -120,34 +110,6 @@
   border-radius: 0.75rem;
 }
 
-/* opacity not working  */
-@media only screen and (min-width: 640px) {
-  .border_gone {
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    position: absolute;
-    object-position: 25%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-  }
-}
-
-.border_gone {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  position: absolute;
-  object-position: 75%;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0.60;
-}
 
 /* contact form */
 .container {
@@ -225,6 +187,7 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .btn_main {
   background-color: hsl(202, 100%, 46%);
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);

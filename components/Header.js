@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <head>
-      <title>We buy houses, get an offer today!</title>
+      <title>We buy houses, sell your home fast.</title>
       </head>
       <header className={styles.header_style}>
         <div className="px-4 mx-auto sm:pr-0 max-w-screen-2xl">

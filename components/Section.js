@@ -2,52 +2,60 @@
 import ContactForm from "./Contact";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import Photo from "../public/photo.jpeg";
 import Home from "../public/home.jpeg";
 
-function PreviewSection() {
+function NotificationSection() {
   return (
-    <section className="relative bg-white">
-      <Image
-        className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
-        src={Photo}
-        alt="Couple on a bed with a dog"
-      />
+    <aside className="p-3 text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+      <div className="flex items-center justify-center">
+        <svg
+          className="w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+          />
+        </svg>
 
-      <div className="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-gray-200 sm:to-transparent"></div>
-
-      <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex">
-        <div className="max-w-xl text-center sm:text-left">
-          <h1 className={styles.text_scheme}>
-            We buy houses.{" "}
-            <strong className="font-extrabold text-rose-700 sm:block">
-              Get your offer today!
-            </strong>
-          </h1>
-
-          <p className={styles.body_scheme}>
-            Our mission is to keep it simple. Keeping the process efficient,
-            fair, and reliable. Doing business as Source Homes and remaining the
-            source for your needs!
-          </p>
-
-          <div className="flex flex-wrap gap-4 mt-8 text-center">
-            <a
-              className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-blue-500 sm:w-auto active:bg-rose-500 hover:bg-rose-700 focus:outline-none focus:ring"
-              href="#name"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
+        <a
+          className="ml-1.5 text-sm font-medium underline underline-offset-1"
+          href="https://calendly.com/adrian-cofund-capital/30min"
+        >
+          Need to sell home fast, or looking for your next investment? &rarr;
+        </a>
       </div>
-    </section>
+    </aside>
+  );
+}
+
+function CTASection() {
+  return (
+    <div className={styles.background_color}>
+      <NotificationSection/>
+      <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <h2 className={styles.text_scheme_two}>
+          <span className="block">We buy houses. </span>
+          <span className="block">Get your offer today!</span>
+        </h2>
+        <p className={styles.body_scheme}>
+          Our mission is to keep it simple. Keeping the process efficient, fair,
+          and reliable. Doing business as Source Homes and remaining the source
+          for your needs!
+        </p>
+      </div>
+    </div>
   );
 }
 
 function CardSection() {
   return (
-    <section className="bg-gray-100">
+    <section className={styles.cta_color}>
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
         <h1 className={styles.text_scheme}>Real Estate</h1>
 
@@ -89,5 +97,5 @@ function CardSection() {
   );
 }
 
-export { PreviewSection };
 export { CardSection };
+export { CTASection };

@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import {PreviewSection, CardSection} from "../components/Section";
+import {PreviewSection, CardSection, CTASection} from "../components/Section";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <PreviewSection/>
+      <CTASection/>
       <CardSection/>
       <Footer/>
     </>
