@@ -73,7 +73,7 @@ function CardSection() {
               Companies that buy houses
             </h2>
             <p className={styles.body_scheme}>
-              We add value by bringing our investors directly to you. Not sure
+              We add value by bringing our best at every corner. Not sure
               where to start, no worries about that. We will provide you with
               all the neccessary information to get started.
             </p>
